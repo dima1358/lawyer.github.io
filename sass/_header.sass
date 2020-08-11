@@ -1,0 +1,178 @@
+.header
+	color: #fff
+	position: relative
+	padding: 50px 0
+	height: 110vh
+	&-bg__slider
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		&-item
+			width: 100vw
+			height: 110vh
+			&::before
+				content: ""
+				display: block
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0
+				bottom: 0
+				right: 0
+				left: 0
+				background: radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.77) 50%,rgba(0,0,0,1) 100%)
+		&-item-1
+			background: url("../img/header/header-bg-1.jpg") center center no-repeat
+			background-size: cover
+		&-item-2
+			background: url("../img/header/header-bg-2.jpg") center center no-repeat
+			background-size: cover
+		&-item-3
+			background: url("../img/header/header-bg-3.jpg") center center no-repeat
+			background-size: cover
+	&-top
+		margin-bottom: 10px
+		&__address
+			&-link
+				display: flex
+				i
+					display: inline-block
+					font-size: 18px
+					margin-right: 10px
+				&-text
+					display: inline-block
+					line-height: 1.4
+		&__email
+			padding-left: 20px
+			&-link
+				display: flex
+				i
+					font-size: 18px
+					margin-right: 10px
+		&__lang
+			display: flex
+			&-item
+				display: block
+				width: 22px
+				height: 22px
+				cursor: pointer
+			&-ua
+				background: url("../img/ukraine.svg") center center no-repeat
+				margin-right: 12px
+			&-ru
+				background: url("../img/russia.svg") center center no-repeat
+		&__phone
+			display: flex
+			justify-content: flex-end
+			i
+				font-size: 20px
+				margin-right: 10px
+			&-link
+				display: block
+				margin-bottom: 10px
+	&-menu
+		margin-bottom: 30px
+		position: relative
+		&__burger
+			background: url("../img/header/burger.svg") center center no-repeat
+			background-size: cover
+			width: 40px
+			height: 40px
+			transition: .3s
+			cursor: pointer
+			position: relative
+			&:hover
+				background: url("../img/header/burger-active.svg") center center no-repeat
+				background-size: cover
+			&-active
+				background: url("../img/header/burger-active.svg") center center no-repeat
+				background-size: cover
+			&-close
+				transition: .3s
+				opacity: 0
+				z-index: -1
+				display: block
+				width: 20px
+				height: 20px
+				background: url("../img/header/burger-close.svg") center center no-repeat
+				background-size: cover
+				background-size: 12px
+				position: absolute
+				right: -20px
+				top: 0
+				&-active
+					opacity: 1
+					z-index: 99
+		&__list
+			display: flex
+			flex-direction: column
+			position: absolute
+			margin-top: 12px
+			opacity: 0
+			transition: .7s
+			z-index: -1
+			background: rgba(#fff, .1)
+			border-radius: 2px
+			padding: 10px 20px
+			&-active
+				opacity: 1
+				z-index: 99
+		&__item
+			overflow-x: hidden
+			margin-bottom: 8px
+		&__link
+			text-transform: uppercase
+			font-size: 13px
+			display: inline-block
+			position: relative
+			padding: 8px 0px 4px 0px
+			transition: .3s
+			&::after
+				display: block
+				content: ""
+				height: 1px
+				width: 100%
+				border-top: 1px dotted $link-color
+				position: absolute
+				bottom: 0
+				right: 0
+				transform: translateX(-100%)
+				transition: .3s
+			&:hover
+				&::after
+					transform: translateX(0%)
+	&-btn
+		text-align: right
+	&-middle
+		text-align: center
+		&__logo
+			max-width: 110px
+		&__title
+			font-family: "Patua One"
+			font-size: 36px
+			letter-spacing: 2px
+			font-weight: 700
+			margin-top: 15px
+			line-height: 1.1
+			margin-bottom: 20px
+			&-sub
+				font-size: 40px
+				margin: 20px 0 15px
+				letter-spacing: 5px
+				text-transform: uppercase
+				display: block
+		&__subtitle
+			font-size: 20px
+	&-quote
+		margin-top: 120px
+		&__text
+			font-size: 18px
+			font-style: italic
+			font-family: "Patua One"
+		&__author
+			display: block
+			margin-top: 15px
+		
+

@@ -1,0 +1,103 @@
+.footer
+	background: $bg-dark
+	color: #666
+	padding: 70px 0
+	font-size: 14px
+	&-container
+		padding-top: 70px
+		padding-bottom: 20px
+		padding: 70px 0 20px 40px
+		position: relative
+		box-shadow: .5px .5px 10px $link-color
+		&::before
+			content: ""
+			display: block
+			width: 30px
+			height: 30px
+			position: absolute
+			top: -15.5px
+			right: 65%
+			background: $link-color
+			transform: rotate(45deg)
+			box-shadow: .5px .5px 10px $link-color
+	&-about
+		&__header
+			display: flex
+			align-items: center
+		&__title
+			text-transform: uppercase
+			font-family: "Patua One"
+			font-size: 26px
+			letter-spacing: 1px
+			color: $link-color
+		&__subtitle
+			color: #fff
+			font-size: 18px
+		&__logo
+			width: 25%
+			margin-right: 30px
+		&__categories
+			margin-top: 36px
+			line-height: 1.6
+			font-size: 14px
+	&-contacts
+		&__title
+			font-size: 16px
+			margin-bottom: 20px
+		&__wrap
+			display: flex
+		&__icon
+			&-mobile,
+			&-email,
+			&-marker
+				color: $link-color
+				font-size: 18px
+			&-email,
+			&-marker
+				font-size: 16px
+				margin-right: 6px
+			&-marker
+				margin-right: 12px
+		&__item
+			margin-bottom: 18px
+			&-number
+				margin-left: 15px
+				margin-bottom: 10px
+			&-email,
+			&-address
+				margin: 10px 0
+		&__link
+			color: #666
+			&-social
+				color: #666
+				font-size: 20px
+				margin: 10px 10px 0 0
+				display: inline-block
+				&:hover
+					color: $link-color
+	&-timetable
+		&__title
+			font-size: 16px
+			margin-bottom: 20px
+		&__info
+			margin-bottom: 15px
+	&-menu
+		&__list
+			&-title
+				margin-bottom: 20px
+				font-size: 16px
+		&__item
+			margin-bottom: 15px
+		&__link
+			border-bottom: 1px dotted $link-color
+			color: #666
+
+
+
+		
+
+		
+
+
+
+

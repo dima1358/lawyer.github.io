@@ -1,0 +1,62 @@
+.documents
+	padding-bottom: 80px
+	border-top: 1px solid $link-color
+	box-shadow: .5px .5px 10px $link-color
+	position: relative
+	&::before
+		content: ""
+		display: block
+		width: 30px
+		height: 30px
+		position: absolute
+		top: -15.5px
+		right: 15%
+		background: $link-color
+		box-shadow: .5px .5px 10px $link-color
+		transform: rotate(45deg)
+	&-title
+		&::before
+			left: 165px
+		&::after
+			right: 165px
+	&-slider
+		position: relative
+		padding-bottom: 50px
+		&__item
+			border-radius: 5px
+			background: #f3eee9
+			height: 500px
+			margin: 0 20px
+			display: flex !important
+			align-items: center
+			justify-content: center
+			padding: 30px
+		&__img
+			display: block
+			border-radius: 5px
+			max-width: 100%
+			max-height: 100%
+			box-shadow: .2px .2px 20px #8b8c8e
+		&__arrow
+			position: absolute
+			bottom: 0
+			cursor: pointer
+			transition: .3s
+			&-right
+				width: 30px
+				height: 30px
+				right: 20px
+				background: url("../img/documents/arrow-right.svg") center center no-repeat
+				background-size: cover
+				&:hover
+					background: url("../img/documents/arrow-right-active.svg") center center no-repeat
+					background-size: cover
+			&-left
+				width: 30px
+				height: 30px
+				left: 20px
+				background: url("../img/documents/arrow-left.svg") center center no-repeat
+				background-size: cover
+				&:hover
+					background: url("../img/documents/arrow-left-active.svg") center center no-repeat
+					background-size: cover

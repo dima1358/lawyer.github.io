@@ -1,0 +1,67 @@
+.questions
+	padding-bottom: 100px
+	position: relative
+	background: url("../img/questions/questions-bg.jpg") center center no-repeat
+	box-shadow: .5px .5px 10px $link-color
+	overflow: hidden
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		right: -110px
+		bottom: 0
+		left: -110px
+		background: rgba(#000, .65)
+		transform: rotate(35deg)
+		box-shadow: .5px .5px 20px #000
+	&-title
+		color: #fff
+		&::after
+			right: 130px
+			background: url("../img/right-square-bracket-white.png") center center no-repeat
+			background-size: cover
+		&::before
+			left: 130px
+			background: url("../img/left-square-bracket-white.png") center center no-repeat
+			background-size: cover
+	&-subtitle
+		color: #fff
+	&-list
+		width: 70%
+		margin: 0 auto
+		text-align: center
+		color: #fff
+		border-bottom: 1px solid #d8d8d8
+	&-item
+		text-transform: uppercase
+		font-size: 17px
+		border-top: 1px solid #d8d8d8
+		padding: 15px 0
+		cursor: pointer
+		transition: .5s
+		position: relative
+		vertical-align: middle
+		&:hover
+			color: $link-color
+			& .questions-arrow-down
+				opacity: 1
+		&-active
+			color: $link-color
+			& .questions-arrow-down
+				opacity: 1
+				transform: rotate(-180deg)
+	&-arrow
+		position: absolute
+		right: 50px
+		font-size: 20px
+		transition: .5s
+		color: $link-color
+		&-down
+			opacity: 0
+	&-answer
+		display: none
+		padding-bottom: 15px
+		line-height: 1.2
+		text-align: left
+	

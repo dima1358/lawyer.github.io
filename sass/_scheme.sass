@@ -1,0 +1,101 @@
+.scheme
+	padding-bottom: 40px
+	background: url("../img/scheme/scheme-bg.jpg") center top no-repeat fixed
+	background-size: cover
+	position: relative
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(#000, .5)
+	&-title
+		color: #fff
+		&::after
+			right: 230px
+			background: url("../img/right-square-bracket-white.png") center center no-repeat
+			background-size: cover
+		&::before
+			left: 230px
+			background: url("../img/left-square-bracket-white.png") center center no-repeat
+			background-size: cover
+	&-item
+		margin-bottom: 60px
+		&__icon
+			position: relative
+			border: 1px solid #d8d8d8
+			width: 40%
+			height: 100px
+			margin: 0 auto 25px
+			display: flex
+			align-items: center
+			justify-content: center
+			&-img
+				display: block
+				width: 40px
+				height: 40px
+				&-1
+					background: url("../img/scheme/scheme-icon-1.svg") center center no-repeat
+					background-size: cover
+				&-2
+					background: url("../img/scheme/scheme-icon-2.svg") center center no-repeat
+					background-size: cover
+					width: 45px
+				&-3
+					background: url("../img/scheme/scheme-icon-3.svg") center center no-repeat
+					background-size: cover
+					width: 45px
+				&-4
+					background: url("../img/scheme/scheme-icon-4.svg") center center no-repeat
+					background-size: cover
+					width: 40px
+				&-5
+					background: url("../img/scheme/scheme-icon-5.svg") center center no-repeat
+					background-size: cover
+					width: 45px
+				&-6
+					background: url("../img/scheme/scheme-icon-6.svg") center center no-repeat
+					background-size: cover
+		&__number
+			border: 1px solid #d8d8d8
+			width: 36px
+			height: 36px
+			display: flex
+			align-items: center
+			justify-content: center
+			transform: rotate(-45deg)
+			position: absolute
+			top: 50%
+			margin-top: -18px
+			right: -18.1px
+			background: #fff
+			box-shadow: .2px .2px 5px #fff
+			span
+				display: block
+				transform: rotate(45deg)
+				font-size: 18px
+				color: $link-color
+		&__text
+			padding: 0 15px
+		&__title
+			text-transform: uppercase
+			font-size: 18px
+			font-weight: 600
+			color: $link-color
+			margin-bottom: 15px
+			text-align: center
+		&__subtitle
+			line-height: 1.2
+			color: #fff
+			text-align: center
+			width: 90%
+			margin: 0 auto
+			&-link
+				color: $link-color
+				cursor: pointer
+				font-weight: bold

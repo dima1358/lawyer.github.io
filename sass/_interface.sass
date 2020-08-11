@@ -1,0 +1,123 @@
+/* preloader */
+
+.preloader
+	background: rgba(255, 255, 255, 1)
+	height: 100%
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	z-index: 9999
+.preloader 
+	span
+		left: 50%
+		margin-left: -50px
+		margin-top: -50px
+		position: absolute
+		top: 50%
+
+.arrow-anchor
+	transition: .5s
+	z-index: -1
+	opacity: 0
+	display: block
+	position: fixed
+	width: 40px
+	height: 40px
+	background: rgba(#b9babb, .7) url("../img/arrow-top.svg") center center no-repeat
+	background-size: 50%
+	border-radius: 50px
+	top: 85vh
+	right: 5vw
+	box-shadow: .2px .2px 10px #fff
+	&-active
+		z-index: 100
+		opacity: 1
+	&:hover
+		background: rgba($link-color, .7) url("../img/arrow-top-active.svg") center center no-repeat
+		background-size: 50%
+
+.section-btn
+	display: inline-block
+	padding: 12px 30px
+	border: 1px solid #fff
+	border-radius: 2px
+	position: relative
+	overflow: hidden
+	transition: .5s
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		width: 2px
+		height: 35px
+		background: #fff
+		bottom: 0
+		left: 10px
+		transform: translateY(35px)
+		transition: .5s
+	&::after
+		content: ""
+		display: block
+		position: absolute
+		width: 2px
+		height: 35px
+		background: #fff
+		top: 0
+		right: 10px
+		transform: translateY(-35px)
+		transition: .7s
+	&:hover
+		background: rgba(#fff, .2)
+		border-color: $link-color
+		text-shadow: 1px 1px 5px #000
+		box-shadow: 1px 1px 10px #000
+		&::before
+			transform: translateY(12px)
+			background: $link-color
+		&::after
+			transform: translateY(-12px)
+			background: $link-color
+
+.section
+	&-header
+		text-align: center
+		padding: 60px 0
+		margin: 0 auto
+		width: 70%
+	&-title
+		margin-top: 20px
+		font-size: 22px
+		text-transform: uppercase
+		font-weight: 600
+		margin-bottom: 14px
+		position: relative
+		z-index: 1
+		&::before
+			content: ""
+			display: block
+			width: 20px
+			height: 70px
+			position: absolute
+			top: -10px
+			bottom: 0
+			left: 215px
+			background: url("../img/left-square-bracket.png") center center no-repeat
+			background-size: cover
+		&::after
+			content: ""
+			display: block
+			width: 20px
+			height: 70px
+			position: absolute
+			top: -10px
+			bottom: 0
+			right: 215px
+			background: url("../img/right-square-bracket.png") center center no-repeat
+			background-size: cover
+	&-subtitle
+		font-size: 18px
+		z-index: 1
+
